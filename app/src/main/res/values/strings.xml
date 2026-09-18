@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Per-App Volume</string>
+    <string name="accessibility_service_description">Used to detect which app is in the foreground and to intercept hardware volume button presses so the custom volume overlay can be shown instead of the system panel. This service does not read screen content.</string>
+    <string name="notification_listener_label">Media session access</string>
+    <string name="overlay_channel_name">Volume overlay service</string>
+    <string name="overlay_channel_desc">Keeps per-app volume memory and the overlay running in the background</string>
+</resources>
