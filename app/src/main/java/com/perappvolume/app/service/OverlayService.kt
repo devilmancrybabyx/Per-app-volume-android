@@ -82,10 +82,10 @@ class OverlayService : Service(), LifecycleOwner, ViewModelStoreOwner, SavedStat
 
     private var floatingButtonController: FloatingButtonController? = null
 
-    override fun onCreate() {
+        override fun onCreate() {
         super.onCreate()
-        lifecycleRegistry.currentState = Lifecycle.State.CREATED
         savedStateController.performRestore(null)
+        lifecycleRegistry.currentState = Lifecycle.State.CREATED
 
         windowManager = getSystemService(Context.WINDOW_SERVICE) as WindowManager
         audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
